@@ -1,46 +1,135 @@
- styling, spanning, responsive layout techniques, and more using pure HTML and CSS.
+# Styling, Spanning, and Responsive Layout with HTML & CSS
 
-### 1.  Employee Data Table
+Demonstrating styling, spanning, and responsive table layout techniques using pure **HTML** and **CSS**.
+
+---
+
+### 1. **Employee Data Table**
 
 A styled table with:
 
-- `colspan`: Merges two header cells for "Name"
-- `border-style: dotted`: Custom borders
-- Hover effect using `:hover` on rows
-- Alternating background color for even rows and columns
-- Center-aligned table using `margin: 0 auto;`
+* **`colspan`**: Merges two header cells for "Name"
+* **Custom Borders**: Using `border-style: dotted`
+* **Hover Effect**: Change row background color on hover
+* **Alternating Colors**: Different background for even rows/columns
+* **Center Aligned**: Using `margin: 0 auto;`
 
 ```html
-<th colspan="2">Name</th>
-<tr>:hover { background-color: #D6EEEE; }
+<table style="border-collapse: collapse; margin: 0 auto;">
+  <tr>
+    <th colspan="2">Name</th>
+    <th>Department</th>
+    <th>Email</th>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>IT</td>
+    <td>john@example.com</td>
+  </tr>
+  <tr>
+    <td>Jane</td>
+    <td>Smith</td>
+    <td>HR</td>
+    <td>jane@example.com</td>
+  </tr>
+</table>
 
-### 2. Vertical Table (Definition Style)
+<style>
+table, th, td {
+  border: 1px dotted black;
+  padding: 8px;
+  text-align: center;
+}
+tr:hover {
+  background-color: #D6EEEE;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+th {
+  background-color: #ccc;
+}
+</style>
+```
 
-Simple 2-column vertical layout where the left column is a label and the right column is content.
+---
 
-<tr>
-  <th>Dept</th>
-  <td>IT</td>
-</tr>
+### 2. **Vertical Table (Definition Style)**
 
-Used for displaying details like:
+A simple 2-column vertical layout table for displaying details:
 
-Department
-Contact
-Address
+* Department
+* Contact
+* Address
 
-### 3. Row Spanning
+```html
+<table style="border: 1px solid #ccc; margin: 0 auto;">
+  <tr>
+    <th>Dept</th>
+    <td>IT</td>
+  </tr>
+  <tr>
+    <th>Contact</th>
+    <td>+91 9876543210</td>
+  </tr>
+  <tr>
+    <th>Address</th>
+    <td>123 Main Street, Coimbatore</td>
+  </tr>
+</table>
+```
 
-Table with a cell that spans multiple rows using rowspan.
-<th rowspan="3">Name</th>
-Used when a single header applies to multiple entries beneath it.
+---
 
-### 4.  Colgroup Styling
+### 3. **Row Spanning**
 
-A calendar-style table demonstrating the use of <colgroup> to apply different background colors for grouped columns.
+Demonstrating `rowspan` where one cell spans multiple rows:
 
-<colgroup>
-  <col span="4" style="background-color: #87c5c5">
-  <col span="3" style="background-color: #c17cde">
-</colgroup>
-This allows for styling entire columns without applying styles individually to each <td>.
+```html
+<table border="1" style="border-collapse: collapse; margin: 0 auto;">
+  <tr>
+    <th rowspan="3">Name</th>
+    <td>John</td>
+  </tr>
+  <tr>
+    <td>Jane</td>
+  </tr>
+  <tr>
+    <td>Smith</td>
+  </tr>
+</table>
+```
+
+---
+
+### 4. **Colgroup Styling**
+
+Using `<colgroup>` to style entire column groups (ideal for calendar-like tables):
+
+```html
+<table border="1" style="border-collapse: collapse; margin: 0 auto;">
+  <colgroup>
+    <col span="4" style="background-color: #87c5c5">
+    <col span="3" style="background-color: #c17cde">
+  </colgroup>
+  <tr>
+    <th>Mon</th>
+    <th>Tue</th>
+    <th>Wed</th>
+    <th>Thu</th>
+    <th>Fri</th>
+    <th>Sat</th>
+    <th>Sun</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+    <td>5</td>
+    <td>6</td>
+    <td>7</td>
+  </tr>
+</table>
+```
