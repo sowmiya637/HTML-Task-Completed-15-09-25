@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lists</title>
+</head>
+<style>
+    div{
+        background-color: aquamarine;
+    }
+div.mycontainer div {
+  width:33%;  
+  float:left;
+}
+.box {
+      background-color: lightblue;
+      padding: 10px;
+      margin: 10px;
+      border: 1px solid blue;
+    }
+#main{
+    background-color: #FFC0C7;
+    border-color: black;
+}
+
+</style>
+<body>
+
+    <!-- ordered list -->
+    <ol>
+  <li>Preheat the oven</li>
+  <li>Mix ingredients</li>
+  <li>Bake for 30 minutes</li>
+</ol>
+
+   <!-- unordered list -->
+
+   <ul>
+  <li>Milk</li>
+  <li>Eggs</li>
+  <li>Bread</li>
+</ul>
+
+  <!-- description list -->
+
+  <dl>
+    <dt>Html</dt>
+    <dd>Hyper Text Markup Language</dd>
+    <dt>CSS</dt>
+    <dd>Cascading Style Sheet</dd>
+  </dl>
+
+   <!-- nested list(list inside another list item) -->
+
+   <ul>
+  <li>Fruits
+    <ul>
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Orange</li>
+    </ul>
+  </li>
+  <li>Vegetables
+    <ol>
+      <li>Carrot</li>
+      <li>Spinach</li>
+    </ol>
+  </li>
+</ul>
+
+   <!-- block level elements -->
+
+   <div>This is a block-level element.</div>
+   <p>This is also a block-level element.</p>
+   <p>This is the first paragraph. It contains a few lines of text to demonstrate how block-level elements behave.This is the second paragraph. Notice that it automatically starts on a new line, even though it's written just after the first one in the HTML.</p>
+
+    <!-- inline elements -->
+
+    <p>This is an inline span <span style="border: 1px solid black">Hello World</span> element inside a paragraph.</p>
+
+    <p>The SPAN element is an inline element,and will not start on a new line and only takes up as much width as necessary.</p>
+
+    <!-- code element(Showing HTML tags, functions, or variables) -->
+
+    <p>To bold text in HTML, use the <code>&lt;b&gt;</code> tag.</p>
+    <p>The HTML <code>&lt;button&gt;</code> tag defines a clickable button.</p>
+
+    <!-- div element(also give background color using style) -->
+
+<div class="content">
+    <h1>My Website</h1>
+    <p>This is the content area.</p>
+</div><br>
+
+   <!-- Aligning <div> elements side by side -->
+
+    <div class="mycontainer">
+
+  <div style="background-color:#FFF4A3;">
+    <h2>London</h2>
+    <p>London is the capital city of England.</p>
+  </div>
+  
+  <div style="background-color:#FFC0C7;">
+    <h2>India</h2>
+    <p>India is my country.</p>
+  </div>
+  
+  <div style="background-color:#D9EEE1;">
+    <h2>Rome</h2>
+    <p>Rome is the capital city of Italy.</p>
+  </div>
+  </div><br>
+
+    <!-- class attribute -->
+
+  <h2 class="box">Box 0</h2>
+    <div class="box">Box 1</div>
+  <div class="box">Box 2</div>
+  <p class="box">Box 3 (This is a paragraph)</p>
+
+
+  <!-- id attribute -->
+
+  <div id="main">
+  <h2>Welcome</h2>
+  <p>This is the main content area.</p>
+</div>
+
+    <!-- Html Bookmark -->
+
+<a href="#section11">Jump to Section 11</a>
+
+<h2 id="section1">Section 1</h2>
+<p>Content of Section 1.</p>
+
+<h2 id="section2">Section 2</h2>
+<p>Content of Section 2.</p>
+    
+<h2 id="section3">Section 3</h2>
+<p>Content of Section 3.</p>
+
+<h2 id="section4">Section 4</h2>
+<p>Content of Section 4.</p>
+
+<h2 id="section5">Section 5</h2>
+<p>Content of Section 5.</p>
+
+<h2 id="section6">Section 6</h2>
+<p>Content of Section 6.</p>
+
+<h2 id="section7">Section 7</h2>
+<p>Content of Section 7.</p>
+
+<h2 id="section8">Section 8</h2>
+<p>Content of Section 8.</p>
+
+<h2 id="section9">Section 9</h2>
+<p>Content of Section 9.</p>
+
+<h2 id="section10">Section 10</h2>
+<p>Content of Section 10.</p>
+
+<h2 id="section11">Section 11</h2>
+<p>Content of Section 11.</p>
+
+   <!-- iframe(display web page inside another web page) -->
+    
+    <iframe 
+      src="https://www.wikipedia.com" 
+      height="300" width="500"
+      title="description"
+      loading="lazy">
+    </iframe>
+
+
+  
+
+
+
+
+
+
+</body>
+</html>

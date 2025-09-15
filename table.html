@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>table data</title>
+</head>
+
+<style>
+  body{
+    background-color: bisque;
+  }
+  table {
+    border: 3px solid darkblue;
+    border-collapse: separate;
+    width: 500px;
+    margin: 0 auto;    /*table in center */
+    background-color: azure;
+    border-spacing: 30px;   /*space between table cell*/
+  }
+  
+  th, td {
+    border: solid purple;
+    padding: 8px;
+    text-align: center;
+    border-style: dotted;
+    /* height: 200px; */
+  }
+
+  /* table styling */
+  tr:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+th:nth-child(even),td:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+ /* Hoverable Table(highlight table rows on mouse over) */
+tr:hover {
+  background-color: #D6EEEE;
+  }
+</style>
+
+<body>
+  <table>
+  <caption>Employee Data</caption>
+  <tr style="background-color: rgb(220, 158, 227);">
+    <th colspan="2">Name</th>
+    <th>City</th>
+  </tr>
+  <tr>
+    <td>Sowmi</td>
+    <td>Bharathi</td>
+    <td>Coimbatore</td>
+  </tr>
+  <tr>
+    <td>Sri</td>
+    <td>Ram</td>
+    <td>Chennai</td>
+  </tr>
+  <tr>
+    <td>Divi</td>
+    <td>Sumi</td>
+    <td>Trichy</td>
+  </tr>
+  <tr>
+    <td>Slk</td>
+    <td>Mahesh</td>
+    <td>Thiruvarur</td>
+  </tr>
+  </table><br><br>
+
+
+  <table>
+    <caption>vertical border</caption>
+  <tr>
+    <th>Dept</th>
+    <td>IT</td>
+  </tr>
+  <tr>
+    <th>Contact</th>
+    <td>1234567890</td>
+  </tr>
+  <tr>
+    <th>Address</th>
+    <td>No.23,Neru Nagar,Madurai</td>
+  </tr>
+</table><br><br>
+
+<table>
+  <caption>cell that spans two rows</caption>
+  <tr>
+    <th rowspan="3">Name</th>
+    <td>sowmi</td>
+    </tr>
+    <tr>
+    <td>sri</td>
+  </tr>
+  <tr>
+    <td>Divi</td>
+  </tr>
+  <tr>
+    <th>Dept</th>
+    <td>IT</td>
+  </tr>
+</table><br><br>
+
+<table style="width: 100%;">
+  <caption>colgroup</caption>
+<colgroup>
+  <col span="4" style="background-color: #87c5c5">
+  <col span="3" style="background-color: #c17cde">
+</colgroup>
+<tr>
+<th>MON</th>
+<th>TUE</th>
+<th>WED</th>
+<th>THU</th>
+<th>FRI</th>
+<th>SAT</th>
+<th>SUN</th>
+</tr>
+<tr>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+</tr>
+<tr>
+<td>8</td>
+<td>9</td>
+<td>10</td>
+<td>11</td>
+<td>12</td>
+<td>13</td>
+<td>14</td>
+</tr>
+<tr>
+<td>15</td>
+<td>16</td>
+<td>17</td>
+<td>18</td>
+<td>19</td>
+<td>20</td>
+<td>21</td>
+</tr>
+<tr>
+<td>22</td>
+<td>23</td>
+<td>24</td>
+<td>25</td>
+<td>26</td>
+<td>27</td>
+<td>28</td>
+</tr>
+</table>
+
+</body>
+</html>
